@@ -87,12 +87,13 @@ public class Main extends JPanel {
         }
 
         Font fonteOriginal = g.getFont();
-        Font fonteGrande = fonteOriginal.deriveFont(fonteOriginal.getSize() * 5f);
+        Font fonteGrande = fonteOriginal.deriveFont(fonteOriginal.getSize() * 3f);
         g.setFont(fonteGrande);
 
         g.setColor(Color.RED);
-        g.drawString("Último Valor: " + ultimoValor, 10, 60);
-        g.drawString("Modo: " + (usarMultithread ? "Multithread" : "Singlethread"), 10, 120);
+        g.drawString("Interações por segundo: " + ultimoValor, 10, 135);
+        g.drawString("Modo: " + (usarMultithread ? "Multithread" : "Singlethread"), 10, 45);
+        g.drawString("Número de particulas:" + NUM_PONTOS, 10, 90);
     }
 
     public static void main(String[] args) {
